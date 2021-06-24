@@ -17,9 +17,10 @@ class View{
     /**
      * Método responsável por retorna o conteúdo renderizado de uma View
      * @param string $view
+     * @param array  $vars (string/numeric)
      * @return string
      */
-    public static function render($view) {
+    public static function render($view, $vars = []) {
         //CONTEÚDO DA VIEW
         $contentView = self::getContentView($view);
 
